@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM</h1>
+        <p>Aprendendo <strong>DOM.</strong></p>
+        <p>Aqui vai o resultado.</p>
+        <div id="msg">Clique em mim.</div>
+    </h1>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[0] //seleciona o primeiro paragráfo
+
+        var d = window.document.getElementId("msg")
+
+        window.document.write(p1.innerText)
+        document.write(" " + p1.innerHTML)
+
+        var di = window.documengt.query.Selector("div.msg")
+        d.style.backgroud = "blue"
+    </script>
+</body>
+</html>
